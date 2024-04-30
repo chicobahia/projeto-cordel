@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Macondo", cursive;
+    --fonte3: "Sriracha", cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: rgba(127, 255, 212, 0.247);
+    font-family: var(--fonte1);
+    overflow-x: hidden;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 8.5vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1.8em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 2.8vw;
+}
+
+section > p {
+    padding-bottom: 1.5em;
+}
+
+section.normal {
+    background-color: aliceblue;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.56);
+    color: antiquewhite;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.448);
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.438);
+    width: 500x;
+    display: inline-block;
+    padding: 0px 10px 0px 10px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+    
+
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-size: cover;
+}
+
+footer {
+    background-color: black;
+    color: antiquewhite;
+    text-align: center;
+    padding: 10px;
+}
